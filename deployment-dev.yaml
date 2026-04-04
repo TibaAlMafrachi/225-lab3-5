@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: almafrtk/225-lab3-5:latest      #<---change this!
+        image: cithit/almarftk:latest      #<---change this!
         ports:
         - containerPort: 80  # Expose NGINX on port 80   
 ---
@@ -30,7 +30,7 @@ spec:
   rules:
   - http:
       paths:
-      - path: /almafrtk4(/|$)(.*)
+      - path: /
         pathType: ImplementationSpecific
         backend:
           service:
